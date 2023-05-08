@@ -1,15 +1,22 @@
 {
-  "name": "lua_collection",
-  "version": "1.0.0",
-  "description": "lua collection online shop",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "C:/Users/noone/Desktop/lua_collection/.git/"
-  },
-  "author": "mehran",
-  "license": "ISC"
+	"name": "lua_collection",
+	"version": "1.0.0",
+	"description": "lua collection online shop",
+	"main": "app.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "C:/Users/noone/Desktop/lua_collection/.git/"
+	},
+	"author": "mehran",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"express-handlebars": "^7.0.7",
+		"hbs": "^4.2.0",
+		"nodemon": "^2.0.22"
+	}
 }
