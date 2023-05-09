@@ -1,5 +1,5 @@
-const admin = (req, res) => {
-	res.render("login.hbs");
+const adminloginform = (req, res) => {
+	res.render("adminlogin.hbs");
 };
 
-export default admin;
+export default adminloginform;
