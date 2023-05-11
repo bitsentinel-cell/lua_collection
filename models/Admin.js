@@ -1,16 +1,23 @@
 import mongoose from "mongoose";
-import passportLocalMongoose from "passport-local-mongoose";
-const Schema = mongoose.Schema;
+mongoose.connect("mongodb://127.0.0.1:27017/lua_collection");
 
-const Admin = new Schema({
-	username: {
+// try {
+// 	await mongoose.connect("mongodb://127.0.0.1:27017/lua_collection");
+// } catch (error) {
+// 	handleError(error);
+// }
+
+const AdminSchema = new mongoose.Schema({
+	name: {
 		type: String,
+		require: true,
 	},
 	password: {
 		type: String,
+		require: true,
 	},
 });
 
-Admin.plugin(passportLocalMongoose);
+const Admin = new mongoose.model("Admin", AdminSchema);
 
-export default mongoose.model("Admin", Admin);
+export default { Admin };

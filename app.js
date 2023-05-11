@@ -1,14 +1,19 @@
 import express from "express";
 import { AdminRoute } from "./routes/AdminRoutes.js";
 import hbs from "hbs";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import passport from "passport";
-import bodyParser from "body-parser";
+
 import LocalStrategy from "passport-local";
 import session from "express-session";
-import Admin from "./models/Admin.js";
+
 const app = express();
 const port = 3000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(express.static("public"));
 
 app.set("view engine", hbs);

@@ -1,138 +1,102 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: url(https://i.ibb.co/VQmtgjh/6845078.png) no-repeat;
+	height: 100vh;
 	font-family: sans-serif;
-	background: linear-gradient(to right, #b92b27, #1565c0);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
 }
-
-.card {
-	margin-bottom: 20px;
-	border: none;
+@media screen and (max-width: 600px;) {
+	body {
+		background-size: cover;
+		:fixed ;
+	}
 }
-
-.box {
-	width: 500px;
-	padding: 40px;
+#particles-js {
+	height: 100%;
+}
+.loginBox {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	background: #191919;
-	text-align: center;
-	transition: 0.25s;
-	margin-top: 100px;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	min-height: 200px;
+	background: #000000;
+	border-radius: 10px;
+	padding: 40px;
+	box-sizing: border-box;
 }
-
-.box input[type="text"],
-.box input[type="password"] {
-	border: 0;
-	background: none;
+.user {
+	margin: 0 auto;
 	display: block;
-	margin: 20px auto;
+	margin-bottom: 20px;
+}
+h3 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #59238f;
 	text-align: center;
-	border: 2px solid #3498db;
-	padding: 10px 10px;
-	width: 250px;
+}
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+	border: none;
+	border-bottom: 2px solid #262626;
 	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25s;
+	height: 40px;
+	color: #fff;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box;
 }
-
-.box h1 {
-	color: white;
-
-	font-weight: 300;
+.loginBox input[type="text"]:hover,
+.loginBox input[type="password"]:hover {
+	color: #42f3fa;
+	border: 1px solid #42f3fa;
+	box-shadow: 0 0 5px rgba(0, 255, 0, 0.3), 0 0 10px rgba(0, 255, 0, 0.2),
+		0 0 15px rgba(0, 255, 0, 0.1), 0 2px 0 black;
 }
-
-.box input[type="text"]:focus,
-.box input[type="password"]:focus {
-	width: 300px;
-	border-color: #2ecc71;
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+	border-bottom: 2px solid #42f3fa;
 }
-
-.box input[type="submit"] {
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 2px solid #2ecc71;
-	padding: 14px 40px;
+.inputBox {
+	position: relative;
+}
+.inputBox span {
+	position: absolute;
+	top: 10px;
+	color: #262626;
+}
+.loginBox input[type="submit"] {
+	border: none;
 	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25s;
+	height: 40px;
+	font-size: 16px;
+	background: #59238f;
+	color: #fff;
+	border-radius: 20px;
 	cursor: pointer;
 }
-
-.box input[type="submit"]:hover {
-	background: #2ecc71;
-}
-
-.forgot {
-	text-decoration: underline;
-}
-
-ul.social-network {
-	list-style: none;
-	display: inline;
-	margin-left: 0 !important;
-	padding: 0;
-}
-
-ul.social-network li {
-	display: inline;
-	margin: 0 5px;
-}
-
-.social-network a.icoFacebook:hover {
-	background-color: #3b5998;
-}
-
-.social-network a.icoTwitter:hover {
-	background-color: #33ccff;
-}
-
-.social-network a.icoGoogle:hover {
-	background-color: #bd3518;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i {
-	color: #fff;
-}
-
-a.socialIcon:hover,
-.socialHoverClass {
-	color: #44bcdd;
-}
-
-.social-circle li a {
-	display: inline-block;
-	position: relative;
-	margin: 0 auto 0 auto;
-	border-radius: 50%;
+.loginBox a {
+	color: #262626;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
 	text-align: center;
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
+	display: block;
 }
-
-.social-circle li i {
-	margin: 0;
-	line-height: 50px;
-	text-align: center;
+a:hover {
+	color: #00ffff;
 }
-
-.social-circle li a:hover i,
-.triggeredHover {
-	transform: rotate(360deg);
-	transition: all 0.2s;
-}
-
-.social-circle i {
-	color: #fff;
-	transition: all 0.8s;
-	transition: all 0.8s;
+p {
+	color: #0000ff;
 }

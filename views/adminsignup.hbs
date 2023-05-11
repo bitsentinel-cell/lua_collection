@@ -28,14 +28,14 @@
 				height="100px"
 				width="100px"
 			/>
-			<h3>ورود به پنل ادمین</h3>
-			<form action="/AdminPanel" method="post">
+			<h3>ثبت نام ادمین</h3>
+			<form action="/AdminPanel/signup" method="post">
 				<div class="inputBox">
 					<input
 						id="uname"
 						type="text"
 						name="username"
-						placeholder="نام کاربری"
+						placeholder="نام کاربر"
 					/>
 					<input
 						id="pass"
@@ -44,12 +44,12 @@
 						placeholder="رمز عبور"
 					/>
 				</div>
-				<input type="submit" name="" value="ورود" />
+				<input type="submit" name="" value="ثبت نام" />
 			</form>
 
 			<div class="text-center">
-				<form action="/AdminPanel/signup" method="get">
-					<input type="submit" value="ثبت نام ادمین" />
+				<form action="/AdminPanel" method="get">
+					<input type="submit" value="ورود به حساب" />
 				</form>
 			</div>
 
