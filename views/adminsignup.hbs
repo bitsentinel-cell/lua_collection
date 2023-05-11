@@ -35,14 +35,32 @@
 						id="uname"
 						type="text"
 						name="username"
-						placeholder="نام کاربر"
+						placeholder="نام کاربری خود را انتخاب کنید"
+					/>
+					<input
+						class="input"
+						type="text"
+						name="email"
+						placeholder="ایمیل خود را وارد کنید"
+						for="email"
 					/>
 					<input
 						id="pass"
 						type="password"
 						name="password"
-						placeholder="رمز عبور"
+						placeholder="رمز عبور قدرتمند انتخاب کنید"
+						for="password"
 					/>
+					<input
+						class="input"
+						type="password"
+						name="confirmPassword"
+						placeholder="رمز عبور را تکرار کنید"
+						for="confirmPassword"
+					/>
+					<p class="help is-danger">
+						${getError(errors, 'confirmPassword')}
+					</p>
 				</div>
 				<input type="submit" name="" value="ثبت نام" />
 			</form>

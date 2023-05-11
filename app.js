@@ -4,7 +4,6 @@ import hbs from "hbs";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import passport from "passport";
-
 import LocalStrategy from "passport-local";
 import session from "express-session";
 
