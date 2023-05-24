@@ -16,4 +16,7 @@ const AdminLogin = (req, res) => {
 	console.log(JSON.stringify(password));
 };
 
+
+
+
 export default { AdminLogin, AdminAuth };
