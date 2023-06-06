@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 try {
-	await mongoose.connect("mongodb://127.0.0.1:27017/lua_collection");
+	await mongoose.connect("mongodb+srv://bitsentinel-cell:987654321mehranheydarisentinel@luacollection.5aesv9x.mongodb.net/luacollection");
 } catch (error) {
 	handleError(error);
 }

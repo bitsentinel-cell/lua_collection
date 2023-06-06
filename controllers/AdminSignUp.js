@@ -10,10 +10,19 @@ const AdminSignUp = (req, res) => {
 
 const AdminSignUpSubmit = (req, res) => {
 	const username = req.body.username;
+	const email = req.body.email;
 	const password = req.body.password;
-
+    
+	if (req.body.password !== req.body.confirmPassword) {
+		
+		throw new Error()
+		
+        
+    }
+	
 	const AdminModel = new Admin({
 		name: username,
+		email: email,
 		password: password,
 	});
 	AdminModel.save();

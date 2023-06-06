@@ -21,6 +21,7 @@
 		<title>Document</title>
 	</head>
 	<body>
+		
 		<div class="loginBox">
 			<img
 				class="user"
@@ -58,10 +59,16 @@
 						placeholder="رمز عبور را تکرار کنید"
 						for="confirmPassword"
 					/>
-					<p class="help is-danger">
-						${getError(errors, 'confirmPassword')}
-					</p>
-				</div>
+					{{!-- {{#if expressFlash}}
+						<p><strong>FLASH!</strong> {{ expressFlash }}</p>
+					{{/if}} --}}
+
+					 {{#if sessionFlash.message}}
+						<div class="{{ sessionFlash.type }}">
+							<strong>FLASH!</strong> {{ sessionFlash.message }}
+						</div>
+					{{/if}} 
+					
 				<input type="submit" name="" value="ثبت نام" />
 			</form>
 
